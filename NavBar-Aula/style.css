@@ -1,41 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-image: url(https://images.unsplash.com/photo-1494507946116-c323e973f4a3?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
-header{
+header {
     background-color: rgb(54, 11, 94);
-    
-    && nav{
+
+    && nav {
         height: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-decoration: none;
-        
-        && ul{
+
+        && ul {
             display: flex;
-            gap: 70px;
+            gap: 80px;
             align-items: center;
             list-style: none;
             letter-spacing: 1px;
         }
 
-        && ul li:hover{
+        && ul li:hover {
             background-color: rgb(162, 112, 208);
             border-radius: 6px;
             opacity: 0.7;
             transition: 0.3s;
         }
-        
-        && button{
+
+        && button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 150px;
             background-color: rgb(0, 60, 255);
             color: white;
             padding: 6px 8px 6px 8px;
@@ -45,28 +51,65 @@ header{
             transition: 0.3s;
 
 
-            && a{
-                background-color: rgb(0, 60, 255);
-            }
         }
 
-        && button:hover{
+        && button:hover {
             opacity: 0.7;
         }
     }
 }
 
-.logo{
+.logo {
     text-transform: uppercase;
-    
-    && img{
+
+    && img {
         padding: 10px;
         width: 60px;
     }
 }
 
-a{
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+
+    && a {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        font-size: 1.1rem;
+        background-color: rgb(0, 60, 255);
+        border-radius: 8px;
+        padding: 6px;
+        transition: 0.3s;
+    }
+
+    && a:hover {
+        opacity: 0.7;
+    }
+}
+
+a {
     color: #fff;
     text-decoration: none;
 
+}
+
+.container-products {
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 20px;
+    gap: 40px;
+}
+
+.products{
+    
 }
